@@ -1,0 +1,42 @@
+uuid: 0c2c16ea-06f3-4319-9a18-39f2c537271a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.main.field_conferences_ref
+    - field.field.paragraph.main.field_subtitle
+    - field.field.paragraph.main.field_title
+    - paragraphs.paragraphs_type.main
+  module:
+    - entity_reference_revisions
+id: paragraph.main.default
+targetEntityType: paragraph
+bundle: main
+mode: default
+content:
+  field_conferences_ref:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

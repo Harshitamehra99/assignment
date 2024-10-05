@@ -1,0 +1,42 @@
+uuid: 93d571dd-1125-4e71-9a9b-58bbedb23ca9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.conferences.field_styles
+    - field.field.paragraph.conferences.field_title
+    - field.field.paragraph.conferences.field_view_references
+    - paragraphs.paragraphs_type.conferences
+  module:
+    - options
+    - viewsreference
+id: paragraph.conferences.default
+targetEntityType: paragraph
+bundle: conferences
+mode: default
+content:
+  field_styles:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_view_references:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

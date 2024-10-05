@@ -1,0 +1,10 @@
+uuid: 835440e4-35fa-4f09-a376-7c53cd67c363
+langcode: en
+status: true
+dependencies: {  }
+id: conferences
+label: Conferences
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

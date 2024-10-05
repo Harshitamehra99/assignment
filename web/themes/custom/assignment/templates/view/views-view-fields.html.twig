@@ -1,0 +1,64 @@
+{#
+/**
+ * @file
+ * Default view template to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set price = row._entity.field_price.entity.getName() %}
+{% set stared = row._entity.field_boolean.getValue[0].value %}
+{% set node_url =  path('entity.node.canonical', {'node': row.nid}) %}
+<div class="item">
+  <div class="card">
+  <div class="img-box">
+      {% if stared == '1' %}
+       <div class="star"></div>
+      {% endif %}
+      {% if price %}
+        <div class="price-tag">{% if price != 'Free' %} &#x20B9; {% endif %} {{fields.field_price.content}}</div>
+      {% endif %}
+  </div>
+    <img class="block-img" src= "{{row._entity.field_image.entity.fileuri|image_style('conferences_image') }}" alt="" />
+   
+      <div class="card-body">
+      {{ fields.title.content|raw }}
+       <p><span><i class="fa fa-tag me-3" aria-hidden="true"></i></span>{{ fields.field_business_type.content|raw }}</p> 
+       <p><span><i class="fa fa-calendar me-3"></i></span>{{ fields.field_date.content }}</p> 
+       <p><span><i class="fa-solid fa-location-dot me-3 red-icon"></i></span>{{ fields.field_address.content }}</p> 
+      </div>
+      <div class="details">
+        <a href="#" id="heart" style="color: inherit;" onclick="return=false"><i class="fa-regular fa-heart"></i></a>
+        {{fields.share_everywhere_field.content}}
+        <a href ="{{file_url(row._entity.field_file.entity.uri.value)}}" download ><i class="fa fa-cloud-download" ></i></a>
+        <a><i class="fa-duotone fa-solid fa-share-nodes"></i></a>
+        <a class="details-btn" href="{{node_url}}">View More</a>
+     
+    </div>
+  </div>
+</div>

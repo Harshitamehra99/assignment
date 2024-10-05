@@ -1,0 +1,21 @@
+uuid: 30fb3e12-b3c9-4655-8913-bebff1bc1944
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.conferences
+  module:
+    - datetime
+id: node.conferences.field_date
+field_name: field_date
+entity_type: node
+bundle: conferences
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

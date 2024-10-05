@@ -1,0 +1,14 @@
+uuid: 031310c2-eb40-45f6-b9dd-5a9d1dd7258a
+langcode: en
+status: true
+dependencies: {  }
+name: conferences_image
+label: 'conferences image'
+effects:
+  3a709051-e514-446e-a267-495d3d32b42d:
+    uuid: 3a709051-e514-446e-a267-495d3d32b42d
+    id: image_resize
+    weight: 1
+    data:
+      width: 330
+      height: 185

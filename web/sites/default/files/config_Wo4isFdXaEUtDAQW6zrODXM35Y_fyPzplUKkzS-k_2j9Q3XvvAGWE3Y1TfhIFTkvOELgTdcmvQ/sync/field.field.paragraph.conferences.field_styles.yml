@@ -1,0 +1,21 @@
+uuid: 80be44b9-8d82-4a49-8783-7b03e0ae0716
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styles
+    - paragraphs.paragraphs_type.conferences
+  module:
+    - options
+id: paragraph.conferences.field_styles
+field_name: field_styles
+entity_type: paragraph
+bundle: conferences
+label: Styles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

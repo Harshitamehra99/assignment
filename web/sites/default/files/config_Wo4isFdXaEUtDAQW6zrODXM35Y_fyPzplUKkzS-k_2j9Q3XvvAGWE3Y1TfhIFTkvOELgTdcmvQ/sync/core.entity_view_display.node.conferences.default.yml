@@ -1,0 +1,108 @@
+uuid: 22173b5d-3117-4ab9-b745-7f27b9e7dfa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.conferences.body
+    - field.field.node.conferences.field_address
+    - field.field.node.conferences.field_boolean
+    - field.field.node.conferences.field_business_type
+    - field.field.node.conferences.field_conference_type
+    - field.field.node.conferences.field_date
+    - field.field.node.conferences.field_file
+    - field.field.node.conferences.field_image
+    - field.field.node.conferences.field_price
+    - node.type.conferences
+  module:
+    - datetime
+    - file
+    - image
+    - options
+    - text
+    - user
+id: node.conferences.default
+targetEntityType: node
+bundle: conferences
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_address:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_boolean:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_business_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_conference_type:
+    type: list_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_price:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

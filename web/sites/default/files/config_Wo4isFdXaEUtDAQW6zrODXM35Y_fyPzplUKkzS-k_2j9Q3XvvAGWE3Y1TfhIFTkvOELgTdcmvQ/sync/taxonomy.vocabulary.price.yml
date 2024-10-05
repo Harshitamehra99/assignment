@@ -1,0 +1,8 @@
+uuid: 7e3dfa58-656e-41b0-96f3-f3da8bbb1060
+langcode: en
+status: true
+dependencies: {  }
+name: Price
+vid: price
+description: 'Price of Item'
+weight: 0

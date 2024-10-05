@@ -1,0 +1,34 @@
+uuid: 24b0a673-bd0a-4a36-979e-f3ee857f633d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_conferences_ref
+    - paragraphs.paragraphs_type.conferences
+    - paragraphs.paragraphs_type.main
+  module:
+    - entity_reference_revisions
+id: paragraph.main.field_conferences_ref
+field_name: field_conferences_ref
+entity_type: paragraph
+bundle: main
+label: 'Conferences Ref'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      conferences: conferences
+    negate: 0
+    target_bundles_drag_drop:
+      conferences:
+        weight: 3
+        enabled: true
+      main:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

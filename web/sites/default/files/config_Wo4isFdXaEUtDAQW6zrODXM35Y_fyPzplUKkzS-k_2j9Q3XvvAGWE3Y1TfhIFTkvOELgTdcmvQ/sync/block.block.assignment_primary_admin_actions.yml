@@ -1,0 +1,20 @@
+uuid: 900bd976-bdc6-40f5-8e98-e8d18c2c399a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - assignment
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: assignment_primary_admin_actions
+theme: assignment
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,69 @@
+
+@font-face {
+    font-family: 'DINPro Regular';
+    src: url('../fonts/DINPro Regular.otf');   
+}
+
+@font-face {
+  font-family: 'DINPro Light';
+  src: url('../fonts/DINPro Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DINPro Bold';
+  src: url('../fonts/DINPro Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINPro Medium';
+    src: url('../fonts/DINPro Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'FuturaNext-DemiBold';
+    src: url('../fonts/FuturaNext-DemiBold.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'FuturaNext-Light';
+    src: url('../fonts/FuturaNext-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'FuturaNext-Medium';
+    src: url('../fonts/FuturaNext-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
