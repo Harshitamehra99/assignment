@@ -28,23 +28,3 @@ jQuery(document).ready(function () {
 	})
     }
 });
-
-
-// const heart = document.getElementById('heart');
-
-// heart.addEventListener('click', function(event) {
-//     event.preventDefault(); // Prevent the default link behavior
-
-//     const icon = heart.querySelector('i');
-    
-//     // Toggle between solid and regular heart
-//     if (icon.classList.contains('fa-regular')) {
-//         icon.classList.remove('fa-regular');
-//         icon.classList.add('fa-solid');
-//         heart.style.color = 'red'; // Change the color to red
-//     } else {
-//         icon.classList.remove('fa-solid');
-//         icon.classList.add('fa-regular');
-//         heart.style.color = 'inherit'; // Change back to original color
-//     }
-// });
