@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.article
+    - node.type.conferences
+    - node.type.landing_page
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
@@ -44,5 +46,7 @@ permissions:
   - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'
+  - 'view conferences revisions'
+  - 'view landing_page revisions'
   - 'view own unpublished content'
   - 'view the administration theme'

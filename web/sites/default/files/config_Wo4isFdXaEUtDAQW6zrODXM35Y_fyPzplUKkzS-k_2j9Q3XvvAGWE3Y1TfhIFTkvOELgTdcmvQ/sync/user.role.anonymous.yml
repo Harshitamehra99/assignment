@@ -4,12 +4,18 @@ status: true
 dependencies:
   config:
     - filter.format.restricted_html
+    - node.type.conferences
+    - node.type.landing_page
   module:
     - comment
     - contact
     - filter
+    - node
+    - paragraphs_type_permissions
     - search
     - system
+    - taxonomy
+    - views_ui
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
@@ -20,5 +26,14 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'access taxonomy overview'
+  - 'administer taxonomy'
+  - 'administer views'
+  - 'bypass paragraphs type content access'
+  - 'create conferences content'
+  - 'create landing_page content'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view own unpublished content'
+  - 'view paragraph content conferences'
+  - 'view paragraph content main'
